@@ -17,5 +17,7 @@ document.forms[1].addEventListener('submit', (e) => {
     e.preventDefault();
     const logTextElement = document.getElementById("entered text");
     const value = e.target.elements[0].value;
-    logTextElement.innerHTML += value
+    logTextElement.innerHTML = value;
+
+    console.log(logTextElement)
 })

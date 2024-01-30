@@ -9,7 +9,7 @@
 </head>
 
 <body>
-    <div class="wrapper">
+    <div class="content">
         <div>
             <div>
                 Do not use values > 45, long wait time... :)
@@ -19,16 +19,18 @@
             </div>
         </div>
         <form action="">
-            <input type="number" placeholder="enter fibonacci" />
-            <input type="text" placeholder="result" disabled />
+            <input type="number" placeholder="enter fibonacci" size="40" id="fibonacci" />
+            <input type="text" placeholder="result" disabled id="result" />
             <button>GO!</button>
         </form>
-        <form action="">
-            <input type="text" placeholder="type text..." />
+        <form action="" class="form__group field">
+            <input type="input" class="form__field" placeholder="Name" name="name" id='name' required />
+            <label for="name" class="form__label">Name</label>
             <button>Log text</button>
         </form>
         <div id="entered text"></div>
     </div>
     <script src="main.js"></script>
 </body>
+
 </html>
