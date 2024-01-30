@@ -1,16 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Simple WebWorker</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-    <form action="">
-        <input type="number" placeholder="enter fibonacci"/>
-        <input type="text" placeholder="result"/>
-        <button>GO!</button>
-    </form>
+    <div class="wrapper">
+        <div>
+            <div>
+                Do not use values > 45, long wait time... :)
+            </div>
+            <div>
+                You can type text in second form during calculation, main thread is not blocking
+            </div>
+        </div>
+        <form action="">
+            <input type="number" placeholder="enter fibonacci" />
+            <input type="text" placeholder="result" disabled />
+            <button>GO!</button>
+        </form>
+        <form action="">
+            <input type="text" placeholder="type text..." />
+            <button>Log text</button>
+        </form>
+        <div id="entered text"></div>
+    </div>
     <script src="main.js"></script>
 </body>
 </html>
